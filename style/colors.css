@@ -1,0 +1,30 @@
+:root {
+  /* BASE */
+  --color-bg: #ffffff;
+  --color-text: #000;
+  --color-accent: #a05822;
+
+  /* VARIAÇÕES DO FUNDO */
+  --color-bg-soft: #1f1f1f;
+  --color-bg-elevated: #262626;
+
+  /* TEXTO */
+  --color-text-muted: #a3a3a3;
+  --color-text-subtle: #737373;
+
+  /* ACCENT (BRONZE VARIAÇÕES) */
+  --color-accent-light: #c27a3a;
+  --color-accent-dark: #7a3f18;
+
+  /* BORDAS */
+  --color-border: #2f2f2f;
+  --color-border-light: #3a3a3a;
+
+  /* ESTADOS */
+  --color-success: #3fa34d;
+  --color-warning: #d4a017;
+  --color-error: #b91c1c;
+
+  /* OVERLAY */
+  --color-overlay: rgba(0, 0, 0, 0.6);
+}

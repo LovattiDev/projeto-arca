@@ -1,0 +1,115 @@
+/* =========================
+   RESET BÁSICO
+========================= */
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+/* =========================
+   HTML / BODY
+========================= */
+html, body {
+  height: 100%;
+}
+
+body {
+  line-height: 1.5;
+  font-family: system-ui, -apple-system, sans-serif;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+
+  background-color: var(--color-bg);
+}
+
+/* =========================
+   HTML / BODY
+========================= */
+.container {
+  padding: 0px 40px;
+}
+
+/* =========================
+   MÍDIA
+========================= */
+img, picture, video, canvas, svg {
+  display: block;
+  max-width: 100%;
+}
+
+/* =========================
+   FORMULÁRIOS
+========================= */
+input, button, textarea, select {
+  font: inherit;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  background: none;
+}
+
+/* =========================
+   LINKS
+========================= */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* =========================
+   LISTAS
+========================= */
+ul, ol {
+  list-style: none;
+}
+
+/* =========================
+   TABELAS
+========================= */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* =========================
+   ACESSIBILIDADE
+========================= */
+:focus {
+  outline: none;
+}
+
+/* mantém acessibilidade para navegação por teclado */
+:focus-visible {
+  outline: 2px solid #38bdf8;
+  outline-offset: 2px;
+}
+
+/* =========================
+   SCROLL SUAVE
+========================= */
+html {
+  scroll-behavior: smooth;
+}
+
+/* =========================
+   TABLET
+========================= */
+@media (min-width: 576px) {
+
+}
+
+/* =========================
+   MOBILE
+========================= */
+@media (min-width: 768px) {
+
+}
+
+.test {
+  height: 500px;
+}

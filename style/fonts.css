@@ -1,0 +1,97 @@
+/* =========================
+   IMPORTAÇÃO DE FONTES
+========================= */
+@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lugrasimo&display=swap');
+
+
+/* =========================
+   VARIÁVEIS DE FONTE
+========================= */
+:root {
+  --font-primary: 'Bree Serif', system-ui, -apple-system, sans-serif;
+  --font-artistic: 'Lugrasimo', system-ui, -apple-system, sans-serif;
+
+  --font-size-xs: 12px;
+  --font-size-sm: 14px;
+  --font-size-md: 16px;
+  --font-size-lg: 20px;
+  --font-size-xl: 28px;
+  --font-size-xxl: 36px;
+
+  --font-weight-regular: 400;
+  --font-weight-medium: 500;
+  --font-weight-bold: 700;
+
+  --line-height-base: 1.5;
+  --line-height-tight: 1.2;
+}
+
+/* =========================
+   BASE
+========================= */
+body {
+  font-family: var(--font-primary);
+  font-size: var(--font-size-md);
+  line-height: var(--line-height-base);
+}
+
+/* =========================
+   HEADINGS
+========================= */
+h1, h2, h3, h4, h5, h6 {
+  font-weight: var(--font-weight-regular);
+  line-height: var(--line-height-tight);
+
+  color: var(--color-text);
+}
+
+h1 {
+  font-size: var(--font-size-xxl);
+}
+
+h2 {
+  font-size: var(--font-size-xl);
+}
+
+h3 {
+  font-size: var(--font-size-lg);
+}
+
+/* =========================
+   TEXTO
+========================= */
+p {
+  font-size: var(--font-size-md);
+
+  color: var(--color-text);
+}
+
+/* =========================
+   UTILITÁRIOS
+========================= */
+.text-sm {
+  font-size: var(--font-size-sm);
+}
+
+.text-lg {
+  font-size: var(--font-size-lg);
+}
+
+.text-xl {
+  font-size: var(--font-size-xl);
+}
+
+.text-bold {
+  font-weight: var(--font-weight-bold);
+}
+
+.text-center {
+  text-align: center;
+}
+
+.text-artistic {
+  font-family: var(--font-artistic);
+  font-weight: var(--font-weight-bold);
+  font-size: var(--font-size-lg);
+  color: var(--color-text);
+}
