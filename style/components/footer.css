@@ -1,0 +1,79 @@
+/* =========================
+   FOOTER
+========================= */
+.footer {
+    padding-top: 80px;
+
+    background-color: var(--color-surface);
+
+    border-top: 1px solid var(--color-border);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    gap: 60px;
+
+    padding-bottom: 60px;
+}
+
+/* BRAND */
+.footer-brand h3 {
+    font-size: var(--font-size-lg);
+}
+
+/* LINKS */
+.footer-links {
+    display: flex;
+    gap: 60px;
+}
+
+.footer-column h4 {
+    margin-bottom: 20px;
+
+    font-size: var(--font-size-sm);
+
+    color: var(--color-text-muted);
+}
+
+.footer-column ul {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-column a {
+    transition: color .2s ease;
+}
+
+.footer-column a:hover {
+    color: var(--color-accent);
+}
+
+/* BOTTOM */
+.footer-bottom {
+    padding: 24px 0;
+
+    border-top: 1px solid var(--color-border);
+
+    text-align: center;
+}
+
+.footer-bottom p {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+/* MOBILE */
+@media (max-width: 768px) {
+
+    .footer-content {
+        flex-direction: column;
+    }
+
+    .footer-links {
+        flex-direction: column;
+        gap: 40px;
+    }
+
+}

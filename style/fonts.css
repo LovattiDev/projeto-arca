@@ -1,97 +1,134 @@
 /* =========================
    IMPORTAÇÃO DE FONTES
 ========================= */
-@import url('https://fonts.googleapis.com/css2?family=Bree+Serif&family=Lugrasimo&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Capriola&display=swap');
 
 /* =========================
    VARIÁVEIS DE FONTE
 ========================= */
 :root {
-  --font-primary: 'Bree Serif', system-ui, -apple-system, sans-serif;
-  --font-artistic: 'Lugrasimo', system-ui, -apple-system, sans-serif;
+    --font-primary: 'Capriola', system-ui, -apple-system, sans-serif;
 
-  --font-size-xs: 12px;
-  --font-size-sm: 14px;
-  --font-size-md: 16px;
-  --font-size-lg: 20px;
-  --font-size-xl: 28px;
-  --font-size-xxl: 36px;
+    --font-size-xs: 12px;
+    --font-size-sm: 14px;
+    --font-size-md: 16px;
+    --font-size-lg: 20px;
+    --font-size-xl: 28px;
+    --font-size-xxl: 36px;
 
-  --font-weight-regular: 400;
-  --font-weight-medium: 500;
-  --font-weight-bold: 700;
+    --font-weight-regular: 400;
+    --font-weight-medium: 500;
+    --font-weight-bold: 600;
 
-  --line-height-base: 1.5;
-  --line-height-tight: 1.2;
+    --line-height-base: 1.5;
+    --line-height-tight: 1.2;
 }
 
 /* =========================
    BASE
 ========================= */
 body {
-  font-family: var(--font-primary);
-  font-size: var(--font-size-md);
-  line-height: var(--line-height-base);
+    font-family: var(--font-primary);
+    font-size: var(--font-size-md);
+    line-height: var(--line-height-base);
+    color: var(--color-text);
 }
 
 /* =========================
    HEADINGS
 ========================= */
-h1, h2, h3, h4, h5, h6 {
-  font-weight: var(--font-weight-regular);
-  line-height: var(--line-height-tight);
-
-  color: var(--color-text);
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    line-height: var(--line-height-tight);
+    color: var(--color-text);
 }
 
 h1 {
-  font-size: var(--font-size-xxl);
+    font-size: var(--font-size-xxl);
+    font-weight: var(--font-weight-bold);
 }
 
 h2 {
-  font-size: var(--font-size-xl);
+    font-size: var(--font-size-xl);
+    font-weight: var(--font-weight-medium);
 }
 
 h3 {
-  font-size: var(--font-size-lg);
+    font-size: var(--font-size-lg);
+    font-weight: var(--font-weight-medium);
+}
+
+h4,
+h5,
+h6 {
+    font-size: var(--font-size-md);
+    font-weight: var(--font-weight-medium);
 }
 
 /* =========================
    TEXTO
 ========================= */
 p {
-  font-size: var(--font-size-md);
+    font-size: var(--font-size-md);
+    color: var(--color-text);
+}
 
-  color: var(--color-text);
+small {
+    font-size: var(--font-size-xs);
+    color: var(--color-text-muted);
 }
 
 /* =========================
    UTILITÁRIOS
 ========================= */
+.text-xs {
+    font-size: var(--font-size-xs);
+}
+
 .text-sm {
-  font-size: var(--font-size-sm);
+    font-size: var(--font-size-sm);
+}
+
+.text-md {
+    font-size: var(--font-size-md);
 }
 
 .text-lg {
-  font-size: var(--font-size-lg);
+    font-size: var(--font-size-lg);
 }
 
 .text-xl {
-  font-size: var(--font-size-xl);
+    font-size: var(--font-size-xl);
+}
+
+.text-xxl {
+    font-size: var(--font-size-xxl);
+}
+
+.text-regular {
+    font-weight: var(--font-weight-regular);
+}
+
+.text-medium {
+    font-weight: var(--font-weight-medium);
 }
 
 .text-bold {
-  font-weight: var(--font-weight-bold);
+    font-weight: var(--font-weight-bold);
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
 
-.text-artistic {
-  font-family: var(--font-artistic);
-  font-weight: var(--font-weight-bold);
-  font-size: var(--font-size-lg);
-  color: var(--color-text);
+.text-muted {
+    color: var(--color-text-muted);
+}
+
+.text-accent {
+    color: var(--color-accent);
 }
