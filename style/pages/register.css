@@ -1,0 +1,84 @@
+/* =========================
+   HOME PAGE
+========================= */
+
+/* MAIN */
+main {
+    min-height: calc(100vh - 80px);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 40px 20px;
+}
+
+.container-register-main {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+}
+
+.page-title {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.page-content {
+    background-color: var(--color-accent-super-light);
+    padding: 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.05);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+}
+
+form label {
+    font-size: 14px;
+    font-weight: 500;
+    color: #4a5568;
+    margin-bottom: -8px;
+}
+
+form input[type="text"],
+form input[type="number"],
+form select,
+form textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #e2e8f0;
+    border-radius: 6px;
+    font-size: 14px;
+    background-color: #f8fafc;
+    box-sizing: border-box;
+}
+
+.radio-group, .checkbox-group {
+    display: flex;
+    gap: 16px;
+    align-items: center;
+    padding: 4px 0;
+}
+
+.radio-group label, .checkbox-group label {
+    margin-bottom: 0;
+    cursor: pointer;
+}
+
+form button[type="submit"] {
+    background-color: var(--color-accent-light);
+    color: white;
+    padding: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 12px;
+}
+
+form button[type="submit"]:hover {
+    background-color: var(--color-accent-dark);
+}
