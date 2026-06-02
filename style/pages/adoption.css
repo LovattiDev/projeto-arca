@@ -1,0 +1,147 @@
+.documents-page {
+    padding: 80px 0;
+}
+
+.documents-header {
+    text-align: center;
+    margin-bottom: 48px;
+}
+
+.documents-header p {
+    margin-top: 12px;
+}
+
+.documents-list {
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+    padding: 24px;
+    box-shadow: var(--shadow-sm);
+    margin-bottom: 64px;
+}
+
+.document-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 20px 0;
+    border-bottom: 1px solid var(--color-border-light);
+}
+
+.document-item:last-child {
+    border-bottom: none;
+}
+
+.document-item h4 {
+    margin-bottom: 4px;
+}
+
+.status {
+    padding: 8px 16px;
+    border-radius: var(--radius-full);
+    font-size: var(--font-size-sm);
+}
+
+.status.pending {
+    background: rgba(214, 196, 106, 0.25);
+    color: #8f7a18;
+}
+
+.status.approved {
+    background: rgba(129, 199, 132, 0.25);
+    color: var(--color-success);
+}
+
+.upload-section {
+    text-align: center;
+}
+
+.upload-section h2 {
+    margin-bottom: 32px;
+}
+
+.upload-area {
+    display: block;
+    cursor: pointer;
+
+    border: 2px dashed var(--color-accent);
+    border-radius: var(--radius-lg);
+
+    background: var(--color-surface);
+
+    padding: 60px 24px;
+
+    transition: all .2s ease;
+}
+
+.upload-area:hover {
+    background: var(--color-accent-super-light);
+    border-color: var(--color-accent-dark);
+}
+
+.upload-area input {
+    display: none;
+}
+
+.upload-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 12px;
+}
+
+.upload-icon {
+    font-size: 48px;
+}
+
+.selected-files {
+    margin-top: 24px;
+}
+
+.file-item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    padding: 14px 18px;
+
+    background: var(--color-surface);
+    border: 1px solid var(--color-border);
+
+    border-radius: var(--radius-md);
+    margin-bottom: 12px;
+}
+
+.file-item button {
+    background: transparent;
+    color: var(--color-error);
+    font-weight: var(--font-weight-medium);
+}
+
+.upload-actions {
+    margin-top: 32px;
+}
+
+@media (max-width: 768px) {
+
+    .documents-page {
+        padding: 48px 0;
+    }
+
+    .document-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+    }
+
+    .file-item {
+        flex-direction: column;
+        gap: 12px;
+        align-items: flex-start;
+    }
+
+    .upload-area {
+        padding: 40px 20px;
+    }
+}

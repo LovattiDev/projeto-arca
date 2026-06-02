@@ -4,7 +4,7 @@
 
 /* HERO */
 .hero-section {
-    min-height: calc(40vh);
+    min-height: calc(50vh);
 
     display: flex;
     align-items: center;
