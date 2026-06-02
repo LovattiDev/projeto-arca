@@ -1,0 +1,124 @@
+.castration-page {
+    padding: 80px 0;
+}
+
+.page-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.page-header p {
+    max-width: 700px;
+    margin: 16px auto 0;
+}
+
+.castration-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 32px;
+
+    margin-bottom: 60px;
+}
+
+.appointment-card,
+.info-card,
+.pet-form-section {
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+}
+
+.appointment-card {
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.info-card {
+    padding: 32px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.requirements-list {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.requirements-list li {
+    color: var(--color-text-muted);
+}
+
+.pet-form-section {
+    padding: 32px;
+}
+
+.pet-form-section h2 {
+    margin-bottom: 24px;
+}
+
+.pet-form {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+}
+
+.form-group label {
+    font-size: var(--font-size-sm);
+    color: var(--color-text-muted);
+}
+
+.full-width {
+    grid-column: span 2;
+}
+
+.selected-info {
+    background: var(--color-bg);
+
+    border: 1px solid var(--color-border-light);
+    border-radius: var(--radius-md);
+
+    padding: 20px;
+}
+
+.selected-info p {
+    margin-bottom: 10px;
+}
+
+.selected-info p:last-child {
+    margin-bottom: 0;
+}
+
+.submit-area {
+    text-align: center;
+    margin-top: 40px;
+}
+
+@media (max-width: 992px) {
+
+    .castration-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .pet-form {
+        grid-template-columns: 1fr;
+    }
+
+    .full-width {
+        grid-column: auto;
+    }
+}
