@@ -1,0 +1,123 @@
+.request-status-page {
+    padding: 80px 0;
+    min-height: 70vh;
+}
+
+.status-header {
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.request-id {
+    margin-top: 20px;
+    font-size: var(--font-size-lg);
+}
+
+.status-card {
+    background: var(--color-surface);
+
+    border: 1px solid var(--color-border);
+    border-radius: var(--radius-lg);
+
+    padding: 50px;
+
+    box-shadow: var(--shadow-sm);
+}
+
+.status-timeline {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: 60px;
+}
+
+.step {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    min-width: 120px;
+}
+
+.step-circle {
+    width: 64px;
+    height: 64px;
+
+    border-radius: 50%;
+
+    border: 3px solid var(--color-border);
+
+    background: transparent;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    font-weight: var(--font-weight-bold);
+    font-size: var(--font-size-lg);
+
+    transition: .3s ease;
+}
+
+.step-label {
+    margin-top: 12px;
+    text-align: center;
+
+    font-size: var(--font-size-sm);
+}
+
+.step-line {
+    width: 80px;
+    height: 3px;
+
+    background: var(--color-border);
+
+    margin-bottom: 35px;
+}
+
+.step.completed .step-circle {
+    background: var(--color-success);
+    border-color: var(--color-success);
+    color: white;
+}
+
+.step-line.completed {
+    background: var(--color-success);
+}
+
+.step.active .step-circle {
+    background: var(--color-accent);
+    border-color: var(--color-accent);
+    color: white;
+}
+
+.step-line.active {
+    background: var(--color-accent);
+}
+
+.status-details {
+    text-align: center;
+
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.status-details h2 {
+    margin-bottom: 16px;
+}
+
+.status-details p {
+    margin-bottom: 24px;
+}
+
+.status-actions {
+    margin-top: 24px;
+
+    display: flex;
+    justify-content: center;
+}
+
+.status-actions .btn {
+    min-width: 220px;
+}
