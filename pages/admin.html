@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+    <!-- GLOBAL -->
+    <link rel="stylesheet" href="./../style/colors.css">
+    <link rel="stylesheet" href="./../style/fonts.css">
+    <link rel="stylesheet" href="./../style/global.css">
+
+    <!-- PAGES -->
+    <link rel="stylesheet" href="./../style/pages/admin.css">
+
+    <!-- COMPONENTS -->
+    <link rel="stylesheet" href="./../style/components/header.css">
+    <link rel="stylesheet" href="./../style/components/footer.css">
+
+</head>
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <div class="container">
+
+            <div class="header-content">
+
+                <a href="./../" class="header-logo">
+                    <img src="https://picsum.photos/300/200" alt="Logo Projeto ARCA">
+                </a>
+
+                <nav class="header-nav">
+                    <ul>
+                        <li><a href="./pages/adoption.html">Adoção</a></li>
+                        <li><a href="./pages/castration.html">Castração</a></li>
+                        <li><a href="./pages/register.html">Registro de Animal</a></li>
+                        <li><a href="#">Ajuda</a></li>
+                    </ul>
+                </nav>
+
+                <a href="/">
+                        <button class="header-profile">
+                            <span>◎</span>
+                        </button>
+                    </a>
+
+            </div>
+
+        </div>
+    </header>
+
+    <!-- MAIN CONTENT -->
+    <main class="admin-page">
+
+        <div class="container">
+
+            <div class="admin-layout">
+
+                <!-- MENU LATERAL -->
+                <aside class="admin-sidebar">
+
+                    <nav class="admin-nav">
+
+                        <ul>
+
+                            <li>
+                                <a href="#" class="active">
+                                    📊 Dashboard
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    👤 Usuários
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    🐾 Animais
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    📄 Documentos
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    ⏳ Fila de Espera
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    🏥 Castrações
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    ❤️ Solicitações de Adoção
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    📈 Relatórios
+                                </a>
+                            </li>
+
+                            <li>
+                                <a href="#">
+                                    ⚙️ Configurações
+                                </a>
+                            </li>
+
+                        </ul>
+
+                    </nav>
+
+                </aside>
+
+                <!-- CONTEÚDO -->
+                <section class="admin-content">
+
+                    <div class="admin-header">
+
+                        <h1>Painel Administrativo</h1>
+
+                    </div>
+
+                    <!-- MÉTRICAS -->
+                    <div class="dashboard-cards">
+
+                        <div class="dashboard-card">
+                            <h3>Usuários</h3>
+                            <span>120</span>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <h3>Animais</h3>
+                            <span>340</span>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <h3>Castrações</h3>
+                            <span>89</span>
+                        </div>
+
+                        <div class="dashboard-card">
+                            <h3>Fila de Espera</h3>
+                            <span>45</span>
+                        </div>
+
+                    </div>
+
+                    <!-- TABELA -->
+                    <div class="admin-table-card">
+
+                        <h2>Solicitações Recentes</h2>
+
+                        <table class="admin-table">
+
+                            <thead>
+
+                                <tr>
+                                    <th>ID</th>
+                                    <th>Solicitante</th>
+                                    <th>Serviço</th>
+                                    <th>Status</th>
+                                </tr>
+
+                            </thead>
+
+                            <tbody>
+
+                                <tr>
+                                    <td>#1201</td>
+                                    <td>João Silva</td>
+                                    <td>Castração</td>
+                                    <td>Em análise</td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1202</td>
+                                    <td>Maria Souza</td>
+                                    <td>Adoção</td>
+                                    <td>Aprovado</td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1203</td>
+                                    <td>Carlos Santos</td>
+                                    <td>Castração</td>
+                                    <td>Fila</td>
+                                </tr>
+
+                                <tr>
+                                    <td>#1204</td>
+                                    <td>Ana Lima</td>
+                                    <td>Adoção</td>
+                                    <td>Pendente</td>
+                                </tr>
+
+                            </tbody>
+
+                        </table>
+
+                        <div class="table-footer">
+
+                            <a href="#" class="btn btn-secondary">
+                                Ver Todas as Solicitações
+                            </a>
+
+                        </div>
+
+                    </div>
+
+                </section>
+
+            </div>
+
+        </div>
+
+    </main>
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <div class="container">
+
+            <div class="footer-content">
+
+                <div class="footer-brand">
+                    <h3>PROJETO ARCA</h3>
+                </div>
+
+                <div class="footer-links">
+
+                    <div class="footer-column">
+                        <h4>COMPANY</h4>
+
+                        <ul>
+                            <li><a href="#">How It Works</a></li>
+                            <li><a href="#">Pricing</a></li>
+                            <li><a href="#">Docs</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>RESOURCES</h4>
+
+                        <ul>
+                            <li><a href="#">Blog Post</a></li>
+                            <li><a href="#">Guides</a></li>
+                            <li><a href="#">See All</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="footer-column">
+                        <h4>ABOUT</h4>
+
+                        <ul>
+                            <li><a href="#">Terms</a></li>
+                            <li><a href="#">Privacy</a></li>
+                            <li><a href="#">Contact</a></li>
+                        </ul>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="footer-bottom">
+                <p>Copyright © 2024 Projeto ARCA</p>
+            </div>
+
+        </div>
+    </footer>
+    
+</body>
+</html>
