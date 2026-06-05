@@ -14,7 +14,10 @@
 
     border-bottom: 1px solid var(--color-border);
 
-    background-image: url(https://picsum.photos/200/300);
+    background-image: url(./../../assets/img/dog-01.png);
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
 }
 
 .hero-content {
@@ -27,12 +30,13 @@
 
 .hero-content h1 {
     margin-bottom: 20px;
+
 }
 
 .hero-content p {
     margin-bottom: 40px;
 
-    color: var(--color-text-muted);
+    color: var(--color-text);
 }
 
 .hero-buttons {

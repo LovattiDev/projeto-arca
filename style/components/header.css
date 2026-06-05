@@ -40,6 +40,13 @@
     display: block;
 
     object-fit: contain;
+
+    background:
+        linear-gradient(
+            135deg,
+            var(--color-component),
+            var(--color-accent)
+        );
 }
 
 /* NAV */
